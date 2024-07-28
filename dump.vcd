@@ -1,0 +1,198 @@
+$date
+	Sun Jul 28 10:57:23 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module PID_Controller_tb $end
+$var wire 16 ! control_output [15:0] $end
+$var reg 1 " clk $end
+$var reg 16 # process_variable [15:0] $end
+$var reg 1 $ reset $end
+$var reg 16 % setpoint [15:0] $end
+$scope module uut $end
+$var wire 32 & D_term [31:0] $end
+$var wire 32 ' I_term [31:0] $end
+$var wire 32 ( PID_output [31:0] $end
+$var wire 32 ) P_term [31:0] $end
+$var wire 1 " clk $end
+$var wire 16 * derivative [15:0] $end
+$var wire 16 + error [15:0] $end
+$var wire 16 , integral [15:0] $end
+$var wire 16 - process_variable [15:0] $end
+$var wire 1 $ reset $end
+$var wire 16 . setpoint [15:0] $end
+$var parameter 16 / Kd $end
+$var parameter 16 0 Ki $end
+$var parameter 16 1 Kp $end
+$var reg 32 2 D_term_reg [31:0] $end
+$var reg 32 3 I_term_reg [31:0] $end
+$var reg 32 4 PID_output_reg [31:0] $end
+$var reg 32 5 P_term_reg [31:0] $end
+$var reg 16 6 control_output [15:0] $end
+$var reg 16 7 derivative_reg [15:0] $end
+$var reg 16 8 error_reg [15:0] $end
+$var reg 16 9 integral_reg [15:0] $end
+$var reg 16 : prev_error [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000000000000 1
+b100000000 0
+b100000000000 /
+$end
+#0
+$dumpvars
+b0 :
+b0 9
+bx 8
+bx 7
+b0 6
+bx 5
+bx 4
+bx 3
+bx 2
+b1100100 .
+b0 -
+b0 ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+b1100100 %
+1$
+b0 #
+0"
+b0 !
+$end
+#5
+bx :
+bx !
+bx 6
+b0 '
+b0 3
+bx ,
+bx 9
+b1100100 +
+b1100100 8
+1"
+0$
+#10
+0"
+#15
+b1100100 :
+bx '
+bx 3
+b1100100000000000000 )
+b1100100000000000000 5
+b110010 +
+b110010 8
+1"
+b110010 #
+b110010 -
+#20
+0"
+#25
+b110010 :
+b1111111111001110 *
+b1111111111001110 7
+b110010000000000000 )
+b110010000000000000 5
+b11001 +
+b11001 8
+1"
+b1001011 #
+b1001011 -
+#30
+0"
+#35
+b11001 :
+b11111111111111100111000000000000 &
+b11111111111111100111000000000000 2
+b1111111111100111 *
+b1111111111100111 7
+b11001000000000000 )
+b11001000000000000 5
+b0 +
+b0 8
+1"
+b1100100 #
+b1100100 -
+#40
+0"
+#45
+b0 :
+b11111111111111110011100000000000 &
+b11111111111111110011100000000000 2
+b0 )
+b0 5
+b1111111111100111 +
+b1111111111100111 8
+1"
+b1111101 #
+b1111101 -
+#50
+0"
+#55
+b1111111111100111 :
+b11111111111111100111000000000000 )
+b11111111111111100111000000000000 5
+b1111111111001110 +
+b1111111111001110 8
+1"
+b10010110 #
+b10010110 -
+#60
+0"
+#65
+b1111111111001110 :
+b11111111111111001110000000000000 )
+b11111111111111001110000000000000 5
+1"
+#70
+0"
+#75
+b0 *
+b0 7
+1"
+#80
+0"
+#85
+b0 &
+b0 2
+1"
+#90
+0"
+#95
+1"
+#100
+0"
+#105
+1"
+#110
+0"
+#115
+1"
+#120
+0"
+#125
+1"
+#130
+0"
+#135
+1"
+#140
+0"
+#145
+1"
+#150
+0"
+#155
+1"
