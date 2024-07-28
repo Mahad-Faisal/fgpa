@@ -3,7 +3,7 @@ This project demonstrates the implementation of a PID (Proportional-Integral-Der
 
 ## **Design Overview**
 
-### PID controller (design.sv)
+### **PID controller (design.sv)**
 The PID controller consists of the following components:
 
 Error Calculation: Computes the difference between the setpoint and the process variable.
@@ -16,43 +16,43 @@ Derivative Term: Computes the rate of change of the error and multiplies by the 
 
 Control Output: Sum of the proportional, integral, and derivative terms, providing the final control signal.
 
-### Testbench
+### **Testbench**
 The testbench.sv file simulates the PID controller's behavior by providing various setpoints and observing the process variable's response. The testbench includes:
 
-Initialization of signals.
+Initialization of signals
 
-Application of test vectors.
+Application of test vectors
 
-Monitoring of output signals.
+Monitoring of output signals
 
-Generation of waveform data for analysis.
+Generation of waveform data for analysis
 
-### Waveform Analysis
+### **Waveform Analysis**
 The waveform results can be visualized using GTKWave or any other VCD viewer. Key signals to observe:
 
-clk: Clock signal.
+clk: Clock signal
 
-reset: Reset signal for initialization.
+reset: Reset signal for initialization
 
-setpoint: Desired setpoint for the process variable.
+setpoint: Desired setpoint for the process variable
 
-process_variable: Current value of the process variable.
+process_variable: Current value of the process variable
 
-error: Difference between setpoint and process variable.
+error: Difference between setpoint and process variable
 
-P_term: Proportional term of the PID controller.
+P_term: Proportional term of the PID controller
 
-I_term: Integral term of the PID controller.
+I_term: Integral term of the PID controller
 
-D_term: Derivative term of the PID controller.
+D_term: Derivative term of the PID controller
 
-PID_output: Combined output of the PID controller.
+PID_output: Combined output of the PID controller
 
-control_output: Final control signal to adjust the process variable.
+control_output: Final control signal to adjust the process variable
 
 ## **Features**
-Proportional Term (P): Provides an output proportional to the current error.
+Proportional Term (P): Provides an output proportional to the current error
 
-Integral Term (I): Sums the past errors to eliminate steady-state error.
+Integral Term (I): Sums the past errors to eliminate steady-state error
 
-Derivative Term (D): Reacts to the rate of change of the error, dampening oscillations.
+Derivative Term (D): Reacts to the rate of change of the error, dampening oscillations
